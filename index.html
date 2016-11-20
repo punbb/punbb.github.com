@@ -1,0 +1,14 @@
+---
+title: Extensions list
+---
+
+{% for ext in site.posts %}
+	<div>
+		<h3><a href="{{ ext.url }}" target="_blank">{{ ext.title }}</a></h3>
+		<p>
+			Description: {{ ext.description }}
+		</p>
+		<p><small>version: {{ ext.version }}</small></p>
+		<p><small>author: {{ ext.version }}</small></p>
+	</div>
+{% endfor %}
