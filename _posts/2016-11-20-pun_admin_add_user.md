@@ -7,3 +7,4 @@ author: PunBB Development Team
 download: https://github.com/punbb/extensions/archive/master.zip
 ---
 
+Detail description ...
