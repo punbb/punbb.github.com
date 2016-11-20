@@ -1,6 +1,6 @@
 ---
-title: Extensions list
 layout: default
+title: Extensions list
 ---
 
 {% for ext in site.posts %}
@@ -10,6 +10,6 @@ layout: default
 			Description: {{ ext.description }}
 		</p>
 		<p><small>version: {{ ext.version }}</small></p>
-		<p><small>author: {{ ext.version }}</small></p>
+		<p><small>author: {{ ext.author }}</small></p>
 	</div>
 {% endfor %}
