@@ -5,13 +5,14 @@ title: Список расширений форума punbb
 
 {% for ext in site.posts %}
 	<div>
-		<h3><a href="{{ ext.download }}" target="_blank">{{ ext.title }}</a></h3>
+		<h3>{{ ext.title }}</a>
 		<div>
 			<img src="{{ ext.icon }}" align="left">
 			<p>Описание: {{ ext.description }}</p>
 			<p><small>Версия: {{ ext.version }}</small></p>
 			<p><small>Автор: {{ ext.author }}</small></p>
-			<p><small>Обсуждения: {{ ext.author }}</small></p>
+			<p><small>Обсуждения: {{ ext.discussions }}</small></p>
+			<a class="btn btn-primary" href="{{ ext.download }}" target="_blank">Скачать</p>
 		</div>
 	</div>
 {% endfor %}
