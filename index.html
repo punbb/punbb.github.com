@@ -4,15 +4,41 @@ title: Список расширений форума punbb
 ---
 
 {% for ext in site.posts %}
-	<div>
-		<h3><a href="{{ ext.info }}" target="_blank">{{ ext.title }}</a></h3>
-		<div>
-			<img src="{{ ext.icon }}" align="left" vspace="10" hspace="10">
-			<p><small>Версия: {{ ext.version }}</small></p>
-			<p><small>Автор: {{ ext.author }}</small></p>
-			<p>Описание: {{ ext.description }}</p>
-			<p><a href="{{ ext.discussions }}" target="_blank">Обсуждения</a></p>
-			<a class="btn btn-primary" href="{{ ext.download }}" target="_blank">Скачать</a>
-		</div>
+
+	<div class="row">
+	  <div class="col-sm-4 col-lg-4 col-md-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h4 class="pull-right"><a href="{{ ext.download }}" class="btn btn-primary" target="_blank">Скачать</a></h4>
+
+          <h4><a href="{{ ext.info }}" target="_blank">{{ ext.title }}</a></h4>
+
+          <dl>
+          	<dt>Версия</dt><dd>{{ ext.version }}</dd>
+          	<dt>Автор</dt><dd>{{ ext.author }}</dd>
+          </dl>
+
+          {{ ext.description }}
+        </div>
+        <div align="center">
+					<img src="{{ ext.icon }}" alt="" style="width:100px; margin: 10px 10px;">
+        </div>
+        <div class="ratings">
+            <p class="pull-right"><a href="{{ ext.discussions }}">Обсуждения</a></p>
+            <p>
+              <a href="{{ ext.info }}" target="_blank">Подробнее</a>
+              <!--
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              -->
+            </p>
+        </div>
+      </div>
+	  </div>
 	</div>
+
 {% endfor %}
+
