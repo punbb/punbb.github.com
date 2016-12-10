@@ -1,15 +1,17 @@
 ---
 layout: default
-title: Extensions list
+title: Список расширений форума punbb
 ---
 
 {% for ext in site.posts %}
 	<div>
 		<h3><a href="{{ ext.download }}" target="_blank">{{ ext.title }}</a></h3>
-		<p>
-			Description: {{ ext.description }}
-		</p>
-		<p><small>version: {{ ext.version }}</small></p>
-		<p><small>author: {{ ext.author }}</small></p>
+		<div>
+			<img src="{{ ext.icon }}" align="left">
+			<p>Описание: {{ ext.description }}</p>
+			<p><small>Версия: {{ ext.version }}</small></p>
+			<p><small>Автор: {{ ext.author }}</small></p>
+			<p><small>Обсуждения: {{ ext.author }}</small></p>
+		</div>
 	</div>
 {% endfor %}
