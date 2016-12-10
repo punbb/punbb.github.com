@@ -10,23 +10,20 @@ title: Список расширений форума punbb
       <div class="thumbnail">
         <div class="caption">
           <h4 class="pull-right"><a href="{{ ext.download }}" class="btn btn-primary" target="_blank">Скачать</a></h4>
-
           <h4><a href="{{ ext.info }}" target="_blank">{{ ext.title }}</a></h4>
-
           <dl>
           	<dt>Версия</dt><dd>{{ ext.version }}</dd>
           	<dt>Автор</dt><dd>{{ ext.author }}</dd>
           </dl>
-
-          <p>{{ ext.description }}</p>
+          {{ ext.description }}
         </div>
-        <div align="center">
+        <!--div align="center">
 					<img src="{{ ext.icon }}" alt="" style="width:100px; margin: 10px 10px;">
-        </div>
+        </div-->
         <div class="ratings">
-            <p class="pull-right btn-info"><a href="{{ ext.discussions }}">Обсуждения</a></p>
+            <p class="pull-right btn btn-info"><a href="{{ ext.discussions }}">Обсуждения</a></p>
             <p>
-              <a href="{{ ext.info }}" class="btn-info" target="_blank">Подробнее</a>
+              <a href="{{ ext.info }}" class="btn btn-info" target="_blank">Подробнее</a>
               <!--
               <span class="glyphicon glyphicon-star"></span>
               <span class="glyphicon glyphicon-star"></span>
