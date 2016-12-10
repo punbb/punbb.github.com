@@ -5,9 +5,9 @@ title: Список расширений форума punbb
 
 {% for ext in site.posts %}
 	<div>
-		<h3>{{ ext.title }}</a>
+		<h3><a href="{{ ext.url }}">{{ ext.title }}</a></h3>
 		<div>
-			<img src="{{ ext.icon }}" align="left">
+			<img src="{{ ext.icon }}" align="left" vspace="10" hspace="10">
 			<p><small>Версия: {{ ext.version }}</small></p>
 			<p><small>Автор: {{ ext.author }}</small></p>
 			<p>Описание: {{ ext.description }}</p>
