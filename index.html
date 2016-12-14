@@ -1,0 +1,41 @@
+---
+layout: default
+title: Список расширений форума punbb
+---
+
+{% for ext in site.posts %}
+
+	<div class="row">
+	  <div class="col-sm-4 col-lg-4 col-md-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <h4 class="pull-right"><a href="{{ ext.download }}" class="btn btn-primary" target="_blank">Скачать</a></h4>
+          <h4><a href="{{ ext.info }}" target="_blank">{{ ext.title }}</a></h4>
+          <img src="{{ ext.icon }}" alt="">
+          <p>
+          	<b>Версия</b> {{ ext.version }}<br>
+          	<b>Автор</b> {{ ext.author }}<br>
+          </p>
+          <p>
+          	{{ ext.description }}
+          </p>
+        </div>
+        <div class="ratings">
+            <p class="pull-right btn btn-info"><a href="{{ ext.discussions }}" target="_blank">Обсуждения</a></p>
+            <p>
+              <a href="{{ ext.info }}" class="btn btn-info" target="_blank">Подробнее</a>
+              <!--
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              <span class="glyphicon glyphicon-star"></span>
+              -->
+            </p>
+        </div>
+      </div>
+	  </div>
+	</div>
+
+{% endfor %}
+
